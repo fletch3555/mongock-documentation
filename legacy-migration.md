@@ -48,7 +48,7 @@ builder.setLegacyMigration(legacyMigration);
 {% endtab %}
 {% endtabs %}
 
-With this, Mongock will run a process just once\(run-always=false\), take all the changes in the collection dbchangelog \(collection-nme\), will map the fields\(changeId, author, timestamp, changeLogClass, changeSetMethod and metadata\) from the ones specified in the mapping-fields property.
+With this, Mongock will run a process just once\(run-always=false\), take all the changes in the collection dbchangelog \(collection-name\), will map the fields\(changeId, author, timestamp, changeLogClass, changeSetMethod and metadata\) from the ones specified in the mapping-fields property.
 
 Once finished, if the property changes-count-expectation is specified, will throw an exception if the number of changes migrated doesn't match the value introduced, in the example, 2.
 
